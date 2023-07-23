@@ -1,0 +1,42 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Recipe Plug-in</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>ChatGPT Recipe Plug-in</h1>
+  <form id="recipeForm">
+    <label for="mealType">Meal Type:</label>
+    <select id="mealType" name="mealType">
+      <option value="breakfast">Breakfast</option>
+      <option value="lunch">Lunch</option>
+      <option value="dinner">Dinner</option>
+      <option value="snack">Snack</option>
+    </select>
+
+    <label>Ingredients:</label>
+    <div id="ingredientsContainer">
+      <input type="text" class="ingredient-input" placeholder="Enter ingredient 1" required>
+    </div>
+    <button type="button" id="addIngredientBtn">+ Add Ingredient</button>
+
+    <label for="optionalCriteria">Optional Criteria:</label>
+    <textarea id="optionalCriteria" name="optionalCriteria" rows="3"
+      placeholder="Cooking method, cuisine, dietary preferences, allergies, etc."></textarea>
+
+    <button type="submit" id="submitBtn">Submit</button>
+  </form>
+
+  <div id="recommendations"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
